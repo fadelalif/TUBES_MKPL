@@ -44,4 +44,9 @@ public class UserDataTest
         assertTrue(exception instanceof LoginFailedException);
         assertEquals(1234, exception.getUserid());
     }
+
+    @Test
+    void testIntentionalFailure() {
+        fail("Intentional failure for testing purposes");
+    }
 }
