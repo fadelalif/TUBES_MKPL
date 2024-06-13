@@ -39,7 +39,7 @@ public class UserDataTest
     @Test
     void testLoginFailedException() {
         UserData user = new UserData(1234, 1234);
-        // Menggunakan assertThrows untuk mengharapkan LoginFailedException
+        // Menggunakan assertThrows untuk mengharapkan LoginFailedExceptionnnn
         LoginFailedException exception = assertThrows(LoginFailedException.class, user::login);
         assertTrue(exception instanceof LoginFailedException);
         assertEquals(1234, exception.getUserid());
